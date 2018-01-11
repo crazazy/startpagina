@@ -27,7 +27,7 @@ jobs:
           - v1-dependencies-
 
       - run: yarn install
-      - run: . makeSites.sh
+      #- run: . makeSites.sh
 
       - save_cache:
           paths:
