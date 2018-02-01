@@ -3,6 +3,6 @@ node createSites.js
 cd docs/
 currentDate=`date`
 git add .
-git pull origin master
+git pull origin CA
 git commit -m "Directory updated on: $currentDate"
-git push origin master
+git push origin CA
