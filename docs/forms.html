@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Startpagina</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		
+		<form action="https://send.pageclip.co/cQRxB4Uw0ovSFdiae1kIuGedTYiH9rEc" method="post">
+			<input type="text" name="name"><br>
+			<input type="hidden" name="code" value="console.log('This person hasn\'t added any to their site!')">
+			<br>
+			<input type="submit" name="Verzend Code" value="Submit">
+		</form>
+
+		<div id="editor" name="code"></div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
+		<script type="text/javascript">
+			function myCode(code){document.querySelector("input[name='code']").setAttribute("value", code)}
+			var editor = ace.edit("editor");
+			editor.setTheme("ace/theme/cobalt");
+			editor.getSession().setMode("ace/mode/javascript");
+			editor.getSession().on('change', function() {
+				myCode(editor.getValue());
+			})
+		</script>
+	</body>
+</html>
