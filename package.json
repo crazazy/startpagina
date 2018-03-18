@@ -2,6 +2,7 @@
   "name": "Startpagina",
   "version": "0.0.1",
   "dependencies": {
-    "pageclip": "^1.0.0"
+    "pageclip": "^1.0.0",
+    "jsdom": "11.6.2"
   }
 }
